@@ -1,8 +1,0 @@
-candidates =  ['john','johnny','jackie','johnny', 'john','jackie','jamie','jamie', 'john','johnny','jamie','johnny', 'john']
-votes ={}
-for vote in candidates:
-    votes[vote]=votes.get(vote,0)+1
-    
-voteMax = max(votes.values())
-winner = min(vote for candidates,votes_win in votes.items() if votes_win==voteMax)
-print(f'Winner: {winner}')
