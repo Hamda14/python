@@ -1,0 +1,13 @@
+packages = int(input("Packages purchased: "))
+if(packages>=10 and packages<=19):
+               print("Discount: 10%")
+               print("Discounted price: ",(10*packages/100))
+elif(packages>=20 and packages<=49):
+               print("Discount: 20%")
+               print("Discounted price: ",(20*packages/100))
+elif(packages>=50 and packages<=99):
+               print("Discounted: 30%")
+               print("Discounted price: ",(30*packages/100))
+elif(packages>=100):
+               print("Discount: 40%")
+               print("Discounted price: ",(40*packages/100))
