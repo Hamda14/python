@@ -1,0 +1,13 @@
+sum_Of_miles = 0
+sum_Of_gallons = 0
+while True:     
+    gallons = float(input("Enter gallons used(press 0 to stop): "))
+    if gallons<=0.0:
+        break
+    miles = float(input("Enter miles driven: "))
+    print("The miles/gallon for this tank was: ", miles/gallons) 
+    sum_Of_miles = sumOfmiles+miles
+    sum_Of_gallons = sumOfgallons+gallons    
+
+ 
+print("Average of miles/gallon was: ",(sum_Of_miles/sum_Of_gallons))
