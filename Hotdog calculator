@@ -1,0 +1,19 @@
+hot_dogs = 10
+hot_dog_buns = 8
+
+people_attending = int(input("Enter people attending: "))
+hot_dog_given = int(input("Hot dogs given per person: "))
+
+hot_dog_packages = people_attending * hot_dog_given
+buns_packages = people_attending * hot_dog_given
+
+needed_hotdog = (hot_dog_packages + hot_dogs) / hot_dogs
+needed_buns = (buns_packages + hot_dog_buns) / hot_dog_buns
+
+leftover_hotdog = (needed_hotdog * hot_dogs) - hot_dog_packages
+leftover_buns = (needed_buns * hot_dog_buns) - buns_packages
+
+print("Hot dogs required: ", needed_hotdog)
+print("Hot dog buns required: ", needed_buns)
+print("Leftover hot dogs: ", leftover_hotdog)
+print("Leftover hot dog buns: ", leftover_buns)
