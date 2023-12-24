@@ -1,0 +1,34 @@
+import random
+
+countries = {
+    'Pakistan': 'Islamabaad',
+    'UAE': 'Abu Dhabi',
+    'Japan': 'Tokyo',
+    'Afghanistan':"Kabul",
+    "Bahrain":'Manama',
+    'Bangladesh':'Dhaka',
+    'China':'Beijing',
+    'France':'Paris',
+    'Germany':'Berlin',
+    'India':'Delhi',
+    'Palestine':'Jerusalem',
+    'South Korea':'Seoul'
+}
+countries_list = list(countries.keys())
+random.shuffle(countries_list)
+success = 0
+failure = 0
+for country in countries_list[:5]:
+    countries1 = countries[country]
+    answer = input(f"What is the capital of {country}: ")
+    if answer.lower()==countries1.lower():
+        success = success+1
+        print("Correct Answer!!")
+    else:
+        failure = failure+1
+        print("Wrong Answer!!")
+        
+        
+print("Quiz Ended!")
+print(f"Correct Answers: {success}")
+print(f"Wrong Asnwers: {failure}")
